@@ -4,8 +4,7 @@ const isEven = (number) => number % 2 === 0;
 
 const playGame = () => {
   const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(`Hello, ${userName}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
 
   for (let i = 0; i < 3; i += 1) {
     const gameNumber = Math.floor(Math.random() * 100) + 1;
