@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const isEven = (number) => number % 2 === 0;
 
-const playGame = () => {
+const playGameEven = () => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
 
@@ -21,4 +21,4 @@ const playGame = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default playGame;
+export default playGameEven;
