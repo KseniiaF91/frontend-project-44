@@ -7,7 +7,7 @@ const mainGameLogic = (gameTask, gameRules) => {
   console.log(gameTask);
 
   for (let i = 0; i < 3; i += 1) {
-    const [correctAnswer, gameQuestion] = gameRules();
+    const [gameQuestion, correctAnswer] = gameRules();
     console.log(gameQuestion);
     const userAnswer = readlineSync.question(`${'Your answer: '}`);
 
