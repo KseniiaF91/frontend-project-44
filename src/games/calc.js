@@ -1,17 +1,18 @@
-import readlineSync from 'readline-sync';
+import mainGameLogic from '../index.js';
 
 const playGameCalc = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!\nWhat is the result of the expression?`);
+  const gameTask = 'What is the result of the expression?';
 
-  for (let i = 0; i < 3; i += 1) {
+  const gameRules = () => {
     const gameNumberFirst = Math.floor(Math.random() * 100) + 1;
     const gameNumberSecond = Math.floor(Math.random() * 100) + 1;
+
     const signs = ['+', '-', '*'];
     const index = Math.floor(Math.random() * signs.length);
     const randomSigns = signs[index];
-    const userAnswer = readlineSync.question(`${'Question: '}${gameNumberFirst}${randomSigns}${gameNumberSecond} \n${'Your answer: '}`);
+
+    const gameQuestion = (`${'Question: '}${gameNumberFirst}${randomSigns}${gameNumberSecond}`);
+
     let correctAnswer;
     if (randomSigns === '+') {
       correctAnswer = gameNumberFirst + gameNumberSecond;
@@ -20,13 +21,8 @@ const playGameCalc = () => {
     } else if (randomSigns === '*') {
       correctAnswer = gameNumberFirst * gameNumberSecond;
     }
-    if (userAnswer === correctAnswer.toString()) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
-      return;
-    }
-  }
-  console.log(`Congratulations, ${userName}!`);
+    return [gameQuestion, correctAnswer.toString()];
+  };
+  mainGameLogic(gameTask, gameRules);
 };
 export default playGameCalc;
