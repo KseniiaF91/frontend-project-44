@@ -6,9 +6,9 @@ const playGameEven = () => {
   const gameRules = () => {
     const isEven = (number) => number % 2 === 0;
     const gameNumber = Math.floor(Math.random() * 100) + 1;
-    const correctAnswer = (isEven(gameNumber)) ? 'yes' : 'no';
     const gameQuestion = (`${'Question: '}${gameNumber}`);
-    return [correctAnswer, gameQuestion];
+    const correctAnswer = (isEven(gameNumber)) ? 'yes' : 'no';
+    return [gameQuestion, correctAnswer];
   };
   mainGameLogic(gameTask, gameRules);
 };
