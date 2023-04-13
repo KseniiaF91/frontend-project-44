@@ -1,11 +1,12 @@
 import mainGameLogic from '../index.js';
+import randomNumber from '../randomnum.js';
 
 const playGameCalc = () => {
   const gameTask = 'What is the result of the expression?';
 
   const gameRules = () => {
-    const gameNumberFirst = Math.floor(Math.random() * 100) + 1;
-    const gameNumberSecond = Math.floor(Math.random() * 100) + 1;
+    const gameNumberFirst = randomNumber();
+    const gameNumberSecond = randomNumber();
 
     const signs = ['+', '-', '*'];
     const index = Math.floor(Math.random() * signs.length);

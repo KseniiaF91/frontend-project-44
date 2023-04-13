@@ -1,11 +1,12 @@
 import mainGameLogic from '../index.js';
+import randomNumber from '../randomnum.js';
 
 const playGameGcd = () => {
   const gameTask = 'Find the greatest common divisor of given numbers.';
 
   const gameRules = () => {
-    let gameNumberFirst = Math.floor(Math.random() * 100) + 1;
-    let gameNumberSecond = Math.floor(Math.random() * 100) + 1;
+    let gameNumberFirst = randomNumber();
+    let gameNumberSecond = randomNumber();
 
     const gameQuestion = (`${'Question: '}${gameNumberFirst} ${gameNumberSecond}`);
 
