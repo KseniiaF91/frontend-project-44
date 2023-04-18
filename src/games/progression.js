@@ -1,4 +1,5 @@
 import mainGameLogic from '../index.js';
+import randomNumber from '../randomnum.js';
 
 const playGameProgression = () => {
   const gameTask = 'What number is missing in the progression?';
@@ -7,7 +8,7 @@ const playGameProgression = () => {
     const arr = [];
     const length = 10;
     const difference = Math.floor(Math.random() * 10) + 1;
-    arr[0] = Math.floor(Math.random() * 10) + 1;
+    arr[0] = randomNumber();
 
     for (let i = 1; i < length; i += 1) {
       arr[i] = arr[i - 1] + difference;
