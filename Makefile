@@ -25,6 +25,6 @@ lint:
 lintfix:
 	npx eslint --fix .
 
-asciinema:
+rec:
 	asciinema rec
 
