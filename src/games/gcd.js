@@ -8,7 +8,7 @@ const playGameGcd = () => {
     let gameNumberFirst = randomNumber();
     let gameNumberSecond = randomNumber();
 
-    const gameQuestion = (`${'Question: '}${gameNumberFirst} ${gameNumberSecond}`);
+    const gameQuestion = (`Question: ${gameNumberFirst} ${gameNumberSecond}`);
 
     let correctAnswer;
     while (gameNumberFirst !== 0 && gameNumberSecond !== 0) {
