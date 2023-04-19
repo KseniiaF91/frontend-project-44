@@ -14,8 +14,8 @@ const playGameProgression = () => {
       arr[i] = arr[i - 1] + difference;
     }
     const hiddenSymbol = arr.splice((Math.floor(Math.random() * 10) + 1), 1, '..');
-    const arrSepator = arr.join(' ');
-    const gameQuestion = (`Question: ${arrSepator}`);
+    const arrSeparator = arr.join(' ');
+    const gameQuestion = (`Question: ${arrSeparator}`);
 
     const correctAnswer = hiddenSymbol;
 
