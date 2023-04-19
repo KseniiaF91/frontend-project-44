@@ -3,6 +3,27 @@
 
 <a href="https://codeclimate.com/github/KseniiaF91/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/d3f14976e28431b21e0b/maintainability" /></a>
 
+# Brain-games 
+```
+Set of five console games
+
+Brain-even: determine an even number;
+Brain-calc: calculate arithmetic expressions;
+Brain-gcd: find the Greatest Common Divisor;
+Brain-progression: find inding missing numbers in a sequence of numbers;
+Brain-prime: determine a prime number.
+```
+# Setup
+```
+git clone https://github.com/KseniiaF91/frontend-project-44.git
+cd frontend-project-44
+make install
+```
+# Start game
+```
+make game-name
+```
+
 <a href="https://asciinema.org/a/q1G1A1W5E4YfhjtnEHoyGD69c" target="_blank"><img src="https://asciinema.org/a/q1G1A1W5E4YfhjtnEHoyGD69c.svg" /></a>
 
 <a href="https://asciinema.org/a/0MAih1FauVkivd4QqHkdm01VV" target="_blank"><img src="https://asciinema.org/a/0MAih1FauVkivd4QqHkdm01VV.svg" /></a>
