@@ -1,12 +1,15 @@
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/KseniiaF91/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/KseniiaF91/frontend-project-44/actions)
+
 # Brain-games 
 ```
 Set of five console games
 
-**Brain-even:** determine an even number;
-**Brain-calc:** calculate arithmetic expressions;
-**Brain-gcd:** find the Greatest Common Divisor;
-**Brain-progression:** find inding missing numbers in a sequence of numbers;
-**Brain-prime:** determine a prime number.
+Brain-even: determine an even number;
+Brain-calc: calculate arithmetic expressions;
+Brain-gcd: find the Greatest Common Divisor;
+Brain-progression: find inding missing numbers in a sequence of numbers;
+Brain-prime: determine a prime number.
 ```
 # Setup
 ```
@@ -16,11 +19,8 @@ make install
 ```
 # Start game
 ```
-make *game-name*
+make game-name
 ```
-
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/KseniiaF91/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/KseniiaF91/frontend-project-44/actions)
 
 <a href="https://codeclimate.com/github/KseniiaF91/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/d3f14976e28431b21e0b/maintainability" /></a>
 
