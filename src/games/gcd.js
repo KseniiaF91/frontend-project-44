@@ -5,19 +5,19 @@ const playGameGcd = () => {
   const gameTask = 'Find the greatest common divisor of given numbers.';
 
   const gameRules = () => {
-    let gameNumberFirst = randomNumber();
-    let gameNumberSecond = randomNumber();
+    let gameRandomNumberFirst = randomNumber();
+    let gameRandomNumberSecond = randomNumber();
 
-    const gameQuestion = (`Question: ${gameNumberFirst} ${gameNumberSecond}`);
+    const gameQuestion = (`Question: ${gameRandomNumberFirst} ${gameRandomNumberSecond}`);
 
     let correctAnswer;
-    while (gameNumberFirst !== 0 && gameNumberSecond !== 0) {
-      if (gameNumberFirst > gameNumberSecond) {
-        gameNumberFirst %= gameNumberSecond;
-      } else if (gameNumberSecond > gameNumberFirst) {
-        gameNumberSecond %= gameNumberFirst;
+    while (gameRandomNumberFirst !== 0 && gameRandomNumberSecond !== 0) {
+      if (gameRandomNumberFirst > gameRandomNumberSecond) {
+        gameRandomNumberFirst %= gameRandomNumberSecond;
+      } else if (gameRandomNumberSecond > gameRandomNumberFirst) {
+        gameRandomNumberSecond %= gameRandomNumberFirst;
       }
-      correctAnswer = gameNumberFirst + gameNumberSecond;
+      correctAnswer = gameRandomNumberFirst + gameRandomNumberSecond;
     }
     return [gameQuestion, correctAnswer.toString()];
   };
