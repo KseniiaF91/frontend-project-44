@@ -1,3 +1,24 @@
+# Brain-games 
+```
+Set of five console games
+
+**Brain-even:** determine an even number;
+**Brain-calc:** calculate arithmetic expressions;
+**Brain-gcd:** find the Greatest Common Divisor;
+**Brain-progression:** find inding missing numbers in a sequence of numbers;
+**Brain-prime:** determine a prime number.
+```
+# Setup
+```
+git clone https://github.com/KseniiaF91/frontend-project-44.git
+cd frontend-project-44
+make install
+```
+# Start game
+```
+make *game-name*
+```
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/KseniiaF91/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/KseniiaF91/frontend-project-44/actions)
 
