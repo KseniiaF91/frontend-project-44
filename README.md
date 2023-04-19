@@ -24,6 +24,7 @@ make install
 make game-name
 ```
 
+
 <a href="https://asciinema.org/a/q1G1A1W5E4YfhjtnEHoyGD69c" target="_blank"><img src="https://asciinema.org/a/q1G1A1W5E4YfhjtnEHoyGD69c.svg" /></a>
 
 <a href="https://asciinema.org/a/0MAih1FauVkivd4QqHkdm01VV" target="_blank"><img src="https://asciinema.org/a/0MAih1FauVkivd4QqHkdm01VV.svg" /></a>
