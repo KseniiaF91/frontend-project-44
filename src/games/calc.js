@@ -12,7 +12,7 @@ const playGameCalc = () => {
     const index = Math.floor(Math.random() * signs.length);
     const randomSigns = signs[index];
 
-    const gameQuestion = (`${'Question: '}${gameNumberFirst}${randomSigns}${gameNumberSecond}`);
+    const gameQuestion = (`Question: ${gameNumberFirst}${randomSigns}${gameNumberSecond}`);
 
     let correctAnswer;
     if (randomSigns === '+') {
