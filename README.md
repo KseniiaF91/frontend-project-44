@@ -30,6 +30,6 @@ make game-name
 
 <a href="https://asciinema.org/a/KXJNcHwoTP4IeYOPHEwsTvGfa" target="_blank"><img src="https://asciinema.org/a/KXJNcHwoTP4IeYOPHEwsTvGfa.svg" /></a>
 
-<a href="https://asciinema.org/a/jgcydQsp60ZZxixK40rNLsZp3" target="_blank"><img src="https://asciinema.org/a/jgcydQsp60ZZxixK40rNLsZp3.svg" /></a>
+<a href="https://asciinema.org/a/SMhTOYLpKSMVHuLSuzT6q52WW" target="_blank"><img src="https://asciinema.org/a/SMhTOYLpKSMVHuLSuzT6q52WW.svg" /></a>
 
 <a href="https://asciinema.org/a/ryf8arCEcf7brd4CCa19nXGaT" target="_blank"><img src="https://asciinema.org/a/ryf8arCEcf7brd4CCa19nXGaT.svg" /></a>
