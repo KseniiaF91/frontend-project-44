@@ -5,7 +5,7 @@
 
 # Brain-games 
 ```
-Set of five console games
+Five console games
 
 Brain-even: determine an even number;
 Brain-calc: calculate arithmetic expressions;
