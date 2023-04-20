@@ -8,10 +8,13 @@ const playGameCalc = () => {
     const gameNumberFirst = randomNumber();
     const gameNumberSecond = randomNumber();
 
-    const signs = ['+', '-', '*'];
-    const index = Math.floor(Math.random() * signs.length);
-    const randomSigns = signs[index];
+    const getRandomSigns = () => {
+      const signs = ['+', '-', '*'];
+      const index = Math.floor(Math.random() * signs.length);
+      return signs[index];
+    };
 
+    const randomSigns = getRandomSigns();
     const gameQuestion = (`Question: ${gameNumberFirst} ${randomSigns} ${gameNumberSecond}`);
 
     let correctAnswer;
