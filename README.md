@@ -46,4 +46,3 @@ make game-name
 ### Brain-prime
 
 <a href="https://asciinema.org/a/ryf8arCEcf7brd4CCa19nXGaT" target="_blank"><img src="https://asciinema.org/a/ryf8arCEcf7brd4CCa19nXGaT.svg" /></a>
-```
