@@ -1,10 +1,10 @@
-import mainGameLogic from '../index.js';
+import playGame from '../index.js';
 import randomNumber from '../randomnum.js';
 
 const playGameProgression = () => {
   const gameTask = 'What number is missing in the progression?';
 
-  const gameRules = () => {
+  const generateRoundData = () => {
     const arr = [];
     const length = 10;
     const difference = Math.floor(Math.random() * 10) + 1;
@@ -22,6 +22,6 @@ const playGameProgression = () => {
     return [gameQuestion, correctAnswer.toString()];
   };
 
-  mainGameLogic(gameTask, gameRules);
+  playGame(gameTask, generateRoundData);
 };
 export default playGameProgression;
