@@ -6,9 +6,9 @@ const playGame = (gameTask, generateRoundData) => {
   console.log(`Hello, ${userName}!`);
   console.log(gameTask);
 
-  const maxGameRounds = 3;
+  const numberOfGameRounds = 3;
 
-  for (let i = 0; i < maxGameRounds; i += 1) {
+  for (let i = 0; i < numberOfGameRounds; i += 1) {
     const [gameQuestion, correctAnswer] = generateRoundData();
     console.log(gameQuestion);
     const userAnswer = readlineSync.question(`${'Your answer: '}`);
