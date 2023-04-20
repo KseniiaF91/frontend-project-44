@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import randomNumber from '../randomnum.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const playGameProgression = () => {
   const gameTask = 'What number is missing in the progression?';
@@ -7,15 +7,18 @@ const playGameProgression = () => {
   const generateRoundData = () => {
     const arr = [];
     const length = 10;
-    const difference = Math.floor(Math.random() * 10) + 1;
-    arr[0] = randomNumber();
+    const difference = getRandomNumber(1, 10);
+    arr[0] = getRandomNumber(1, 100);
 
-    for (let i = 1; i < length; i += 1) {
-      arr[i] = arr[i - 1] + difference;
-    }
-    const hiddenSymbol = arr.splice((Math.floor(Math.random() * 9) + 1), 1, '..');
+    const makeProgression = () => {
+      for (let i = 1; i < length; i += 1) {
+        arr[i] = arr[i - 1] + difference;
+      }
+      return arr;
+    };
+    const hiddenSymbol = makeProgression().splice(getRandomNumber(0, arr.length - 1), 1, '..');
     const arrSeparator = arr.join(' ');
-    const gameQuestion = (`Question: ${arrSeparator}`);
+    const gameQuestion = (`${arrSeparator}`);
 
     const correctAnswer = hiddenSymbol;
 

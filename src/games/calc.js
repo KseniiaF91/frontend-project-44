@@ -1,31 +1,40 @@
 import playGame from '../index.js';
-import randomNumber from '../randomnum.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const playGameCalc = () => {
   const gameTask = 'What is the result of the expression?';
 
   const generateRoundData = () => {
-    const gameNumberFirst = randomNumber();
-    const gameNumberSecond = randomNumber();
+    const gameNumberFirst = getRandomNumber(1, 100);
+    const gameNumberSecond = getRandomNumber(1, 100);
 
     const getRandomSigns = () => {
       const signs = ['+', '-', '*'];
-      const index = Math.floor(Math.random() * signs.length);
+      const index = getRandomNumber(0, signs.length - 1);
       return signs[index];
     };
 
-    const randomSigns = getRandomSigns();
-    const gameQuestion = (`Question: ${gameNumberFirst} ${randomSigns} ${gameNumberSecond}`);
+    const randomSign = getRandomSigns();
+    const gameQuestion = (`${gameNumberFirst} ${randomSign} ${gameNumberSecond}`);
 
-    let correctAnswer;
-    if (randomSigns === '+') {
-      correctAnswer = gameNumberFirst + gameNumberSecond;
-    } else if (randomSigns === '-') {
-      correctAnswer = gameNumberFirst - gameNumberSecond;
-    } else if (randomSigns === '*') {
-      correctAnswer = gameNumberFirst * gameNumberSecond;
-    }
-    return [gameQuestion, correctAnswer.toString()];
+    const getCorrectAnswer = () => {
+      let correctAnswer;
+      switch (randomSign) {
+        case '+':
+          correctAnswer = gameNumberFirst + gameNumberSecond;
+          break;
+        case '-':
+          correctAnswer = gameNumberFirst - gameNumberSecond;
+          break;
+        case '*':
+          correctAnswer = gameNumberFirst * gameNumberSecond;
+          break;
+        default:
+          throw new Error(`Unknown randomSign: '${randomSign}'!`);
+      }
+      return correctAnswer.toString();
+    };
+    return [gameQuestion, getCorrectAnswer()];
   };
   playGame(gameTask, generateRoundData);
 };
