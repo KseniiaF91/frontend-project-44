@@ -1,10 +1,10 @@
-import mainGameLogic from '../index.js';
+import playGame from '../index.js';
 import randomNumber from '../randomnum.js';
 
 const playGameCalc = () => {
   const gameTask = 'What is the result of the expression?';
 
-  const gameRules = () => {
+  const generateRoundData = () => {
     const gameNumberFirst = randomNumber();
     const gameNumberSecond = randomNumber();
 
@@ -24,6 +24,6 @@ const playGameCalc = () => {
     }
     return [gameQuestion, correctAnswer.toString()];
   };
-  mainGameLogic(gameTask, gameRules);
+  playGame(gameTask, generateRoundData);
 };
 export default playGameCalc;
