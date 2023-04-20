@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "Brain-games is a set of five console games. Namely brain-even, brain-calc, brain-gcd, brain-progression, brain-prime. Each game asks questions that need to be answered correctly.",
+  "description": "Brain-games - five console games. Namely brain-even, brain-calc, brain-gcd, brain-progression, brain-prime. Each game asks questions that need to be answered correctly.",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
