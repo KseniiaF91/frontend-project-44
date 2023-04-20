@@ -10,7 +10,7 @@ const playGame = (gameTask, generateRoundData) => {
 
   for (let i = 0; i < numberOfGameRounds; i += 1) {
     const [gameQuestion, correctAnswer] = generateRoundData();
-    console.log(gameQuestion);
+    console.log(`Question: ${gameQuestion}`);
     const userAnswer = readlineSync.question(`${'Your answer: '}`);
 
     if (userAnswer === correctAnswer) {
