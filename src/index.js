@@ -7,7 +7,6 @@ const playGame = (gameTask, generateRoundData) => {
   console.log(gameTask);
 
   const numberOfGameRounds = 3;
-
   for (let i = 0; i < numberOfGameRounds; i += 1) {
     const [gameQuestion, correctAnswer] = generateRoundData();
     console.log(`Question: ${gameQuestion}`);
