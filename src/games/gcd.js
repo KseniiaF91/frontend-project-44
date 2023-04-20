@@ -7,7 +7,6 @@ const playGameGcd = () => {
   const generateRoundData = () => {
     let gameNumberFirst = getRandomNumber(1, 100);
     let gameNumberSecond = getRandomNumber(1, 100);
-
     const gameQuestion = (`${gameNumberFirst} ${gameNumberSecond}`);
 
     const getCorrectAnswer = () => {

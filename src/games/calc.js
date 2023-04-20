@@ -13,7 +13,6 @@ const playGameCalc = () => {
       const index = getRandomNumber(0, signs.length - 1);
       return signs[index];
     };
-
     const randomSign = getRandomSigns();
     const gameQuestion = (`${gameNumberFirst} ${randomSign} ${gameNumberSecond}`);
 
