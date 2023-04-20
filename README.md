@@ -13,8 +13,8 @@ Brain-prime: determine a prime number.
 ```
 ## System Requirements
 ```
-Node.js - 18.15.0;
-GNU Make - 4.3.
+Node.js - 18.15.0
+GNU Make - 4.3
 ```
 ## Setup
 ```
