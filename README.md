@@ -11,6 +11,11 @@ Brain-gcd: find the Greatest Common Divisor;
 Brain-progression: find inding missing numbers in a sequence of numbers;
 Brain-prime: determine a prime number.
 ```
+## System Requirements
+```
+Node.js - 18.15.0;
+GNU Make - 4.3.
+```
 ## Setup
 ```
 git clone https://github.com/KseniiaF91/frontend-project-44.git
