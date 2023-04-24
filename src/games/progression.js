@@ -5,24 +5,25 @@ const playGameProgression = () => {
   const gameTask = 'What number is missing in the progression?';
 
   const generateRoundData = () => {
-    const arr = [];
-    const length = 10;
-    const difference = getRandomNumber(1, 10);
-    arr[0] = getRandomNumber(1, 100);
-
-    const makeProgression = () => {
-      for (let i = 1; i < length; i += 1) {
-        arr[i] = arr[i - 1] + difference;
+    const makeProgression = (startNum, len, diff) => {
+      const progression = [];
+      progression[0] = startNum;
+      for (let i = 1; i < len; i += 1) {
+        progression[i] = progression[i - 1] + diff;
       }
-      return arr;
+      return progression;
     };
-    const hiddenSymbol = makeProgression().splice(getRandomNumber(0, arr.length - 1), 1, '..');
-    const arrSeparator = arr.join(' ');
-    const gameQuestion = (`${arrSeparator}`);
 
-    const correctAnswer = hiddenSymbol;
+    const startNum = getRandomNumber(1, 100);
+    const progressionLength = 10;
+    const difference = getRandomNumber(1, 10);
+    const progression = makeProgression(startNum, progressionLength, difference);
 
-    return [gameQuestion, correctAnswer.toString()];
+    const randomSymbolIndex = getRandomNumber(0, progression.length - 1);
+    const hiddenSymbol = progression.splice(randomSymbolIndex, 1, '..');
+    const gameQuestion = (`${progression.join(' ')}`);
+
+    return [gameQuestion, hiddenSymbol.toString()];
   };
 
   playGame(gameTask, generateRoundData);
